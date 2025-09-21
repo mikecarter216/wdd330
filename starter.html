@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="Vanilla JS final project demo: Weather + Recipes using Open-Meteo and TheMealDB APIs" />
+<title>Weather & Recipes — VanillaJS Project</title>
+<link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+<header class="site-header">
+<div class="container">
+<h1 id="site-title">Weather & Recipes</h1>
+<nav aria-label="Main Navigation">
+<ul class="nav-list">
+<li><a href="#weather">Weather</a></li>
+<li><a href="#recipes">Recipes</a></li>
+</ul>
+</nav>
+</div>
+</header>
+
+
+<main id="main" class="container">
+<section id="hero" class="hero" aria-labelledby="hero-heading">
+<h2 id="hero-heading">Find local weather and a recipe suggestion</h2>
+<p class="lead">Type a city to fetch the weather and a suggested meal.</p>
+<form id="search-form" aria-label="Search form">
+<label for="city-input" class="visually-hidden">City name</label>
+<input id="city-input" name="city" placeholder="Enter city (e.g. Lagos)" required />
+<button type="submit" id="search-btn">Search</button>
+</form>
+</section>
+
+
+<section id="weather" aria-labelledby="weather-heading" class="card-grid">
+<h3 id="weather-heading">Weather</h3>
+<div id="weather-result" class="card" role="region" aria-live="polite">
+<p class="muted">No weather loaded yet.</p>
+</div>
+</section>
+
+
+<section id="recipes" aria-labelledby="recipes-heading" class="card-grid">
+<h3 id="recipes-heading">Recipe Suggestion</h3>
+<div id="recipe-result" class="card" role="region" aria-live="polite">
+<p class="muted">No recipe loaded yet.</p>
+</div>
+</section>
+</main>
+
+
+<footer class="site-footer">
+<div class="container">
+<p>Built with vanilla JavaScript • Accessible • Deployable to GitHub Pages</p>
+</div>
+</footer>
+
+
+<script type="module" src="/js/main.js"></script>
+</body>
+</html>
